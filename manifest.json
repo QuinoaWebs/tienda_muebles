@@ -1,0 +1,29 @@
+{
+
+	"name": "web",
+	"short_name": "web",
+	"description": "Página web sobre muebles en general",
+	"background_color": "#fff",
+	"theme_color": "#ff5727",
+	"orientation": "portrait",
+	"display": "standalone",
+	"start_url": "./?utm_source=web_app_manifest",
+	"scope": "./",
+	"lang": "es-ES",
+	"icons": [
+
+	{
+	 	"src": "./favicon192x192.png",
+	 	"sizes": "192x192",
+	 	"type":"image/png"
+		
+	 },
+
+	 {
+	 	"src": "./favicon512x512.png",
+	 	"sizes": "512x512",
+	 	"type": "image/png"
+	 }	
+
+	]
+}

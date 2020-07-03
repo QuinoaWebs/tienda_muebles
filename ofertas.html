@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es" manifest="manifiestoCache.manifest">
+    <head>
+      
+      <!-- La codificación de caracteres, para que se muestren bien los caracteres ajenos al inglés -->
+      <meta charset="UTF-8" />
+      <!-- 
+      Asegura que Explorer funcione a su máxima capacidad y activa el Frame de Chrome
+      http://librosweb.es/css/capitulo_4/margen_relleno_bordes_y_modelo_de_cajas.html
+      -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <!-- Título entre 60 y 70 caracteres -->
+      <title>Muebles Muebles | Ofertas</title>
+
+      <meta name="keywords" content="Palabras clave para el navegador, relacionadas con la tematica de la web" />
+
+      <!-- Descripción entre 155 y 160 caracteres -->
+      <meta name="description" content="Breve descripción de lo que contendrá el documento HTML" />
+
+      <!-- Para que el contenido se adapte al tamaño de la pantalla del dispositivo -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Para que en iOS una web parezca app -->
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      <!-- default, black o black-traslucent-->
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <!--
+      https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html
+      Tablets Retina Display 152x152
+      Smartphones Retina Display 120x120
+      Tablets 76x76
+      Smartphones 57x57
+      Desktop 16x16
+      http://convertico.com/
+      -->
+      <link rel="shortcut icon" type="image/x-icon" href="" />
+      <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+      <link rel="shortcut icon" type="image/svg+xml" href="" />
+      <link rel="apple-touch-icon" size="" href="" />
+
+      <!-- http://humanstxt.org/ -->
+      <link rel="author" type="text/plain" href="humans.txt" />
+      <!-- 
+      http://www.sitemaps.org/
+      http://www.xml-sitemaps.com/
+      -->
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+      <!--
+      http://www.robotstxt.org/
+      http://deteresa.com/meta-robots
+      -->
+      <meta name="robots" content="index,follow" />
+
+
+ 	  
+      <!-- Meta etiquetas para PWA -->
+    
+      <meta name='MobileOptimized' content="width" />
+      <meta mane='HandheldFriendly' content="true" />
+      <link rel="manifest" href="./manifest.json" />
+
+      <meta name="theme-color" content="#ff5727" />
+
+      
+
+      <!-- // Meta etiquetas para PWA -->
+	
+      
+
+      <!-- font-awesome icons -->
+      <link href="css/font-awesome.css" rel="stylesheet">
+      <!-- //font-awesome icons -->
+
+      <!-- normalize -->
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <!-- //normalize -->
+
+      <!--//stylesheets-->
+      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <link rel="stylesheet" type="text/css" href="css/ofertas.css">
+      <!--//stylesheets-->
+
+      <!-- google fonts -->
+      <!-- <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> -->
+      <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
+      <!-- // google fonts -->
+
+
+    </head>
+
+	<body>
+
+			
+		<header class="header">
+
+			<div class="fotoGaleria">
+        		<div class="fotoGaleriaInfo">
+          			<h1>Ofertas</h1>
+        		</div>
+            
+      		</div>
+		</header>
+		  
+      <!-- navegador -->
+
+      <section class="navegador">
+            
+        <div class="enlaces">
+          <!-- <a href="#">Home</a> -->
+          <a href="./#sobreNosotros">Nosotros</a>
+          <a href="./#galeria">Galería</a>
+          <a href="./folletos/folleto.pdf" target="__blank">Folletos</a>               
+          <a href="./#contacto">Contacto</a>
+              
+        </div>
+      </section>
+		<section class="carro" id='carro'>
+			
+			<div class="container">
+			
+				<div class="row">								
+ 	
+        		<!-- Elementos generados a partir del JSON -->
+        			<main id="items" class="col-sm-8 row main"></main>
+        		<!-- Carrito -->
+        			<aside class="col-sm-4 aside" >
+            			<h2>Carrito</h2>
+            	<!-- Elementos del carrito -->
+            				<ul id="carrito" class="list-group"></ul>
+            	<hr>
+            	<!-- Precio total -->
+            					<p class="text-right">Subtotal: <span id="subtotal"></span>&euro;</p>
+								<p class="text-right">Iva: <span id="iva"></span>&euro;</p>
+								<p class="text-right">Total: <span id="total"></span>&euro;</p>
+
+            					<div class="datosCompra" id='datosCompra'>
+            
+            						<button type='button' id='btnDatosCompra' class="btnDatosCompra">Datos Compra</button>
+            					</div>
+        			</aside>
+        		</div>	
+    			
+			</div>
+
+		</section>
+
+
+
+ 		<section class="oculta" id='oculta'>
+
+ 		<fieldset>
+ 		<h2>Formulario de Compra</h2>
+
+ 			<div class="volverCarro" id='volverCarro'>
+ 			
+ 				<button type='button'id='regresarCarro' class='regresarCarro'>Volver al Carrito</button>
+
+ 			</div>
+			
+		 <div class="formulario">
+
+                  <form action='mailto:jpascual03380@gmail.com' method="GET" id='form' class="form" enctype="text/plain">
+
+                     <div class="informacionFormulario">
+                        <div>
+                           <label for='nombre'>Nombre</label>
+
+                           <input type="text" name="nombre" placeholder="Nombre" id='nombre' />
+                           
+                        </div>
+
+                        <div>
+                           <label for='apellidos'>Apellidos</label>
+                           <input type="text" name="apellidos" placeholder="Apellidos" id='apellidos' />
+                           
+
+                        </div>
+
+                        <div>
+                           <label for='email'>Email</label>                     
+                           <input type="email" name="email" placeholder="Email" id='email' />
+                          
+
+                        </div>
+
+                        <div>
+							<label for='telefono'>Teléfono</label>
+
+                           <input type="tel" name="telefono" placeholder="Teléfono" id='telefono' />
+                           
+                        </div>
+
+						<div>
+							<label for='direccion'>Dirección</label>
+                           <input type="text" name='direccion' placeholder="Dirección" id='direccion' />
+                           
+
+                        </div>
+
+
+                        <div>
+							 <label for='provincia'>Provincia</label>
+
+                           <input type="text" name="provincia" placeholder="Provincia" id='provincia' />
+                          
+                        </div>
+
+                        <div>
+							  <label for='mensaje'>Comentario</label>
+                           <textarea name='mensaje' placeholder="Dejamos un comentario" id='mensaje'></textarea>
+                         
+
+                        </div>
+                           
+                     </div>
+
+                     <div class="botonesFormulario">
+                        
+                        <div>
+
+                         <!-- <input type="submit" name="enviar" value="Enviar" /> -->
+                        </div>
+                        
+                        <div>
+
+                         <input type="reset" name="reset" id='reset' class="reset" value="Borrar Datos" />
+                         <label for='reset'>Reset</label>
+
+                        </div>
+                         
+                     </div>
+
+                    
+
+                  </form>
+               </div>
+			</fieldset>
+			
+
+
+
+
+			<div class="cuentaBanco">
+				<fieldset>			
+				<p>La única forma de pago aceptada es através de transferencia bancaria.
+					Si deseas finalizar la compra, pulsa el boton 	  "FINALIZAR COMPRA", en ese momento aparecera
+			    	en la pantalla el número de cuenta en el que 	debés hacer el ingreso. De todas formas en un 
+			    	plazo máximo de 24 horas desde que recibamo tu 	   pedido, nos pondremos en contacto contigo
+					para ayudarte en todo lo que necesite.
+				</p>
+				
+				<div class="cuenta" id='cuenta'>
+					<p>ES/24 0214 0124 2104 4120 125</p>
+				</div>
+				</fieldset>	
+			</div>
+
+			<div class="botonera" id='botonera'>
+				
+				<button type="button" disabled='true' class="finalizarCompra" id='finalizarCompra'>Finalizar Compra</button> 
+			</div>
+			
+
+		</section>
+
+		 <!-- footer  -->
+
+		  <footer class="footer">
+            <div class="piePagina">
+               <div class="derechosReservados">
+                  <p>© 
+                    <span>2020 Muebles (nombre). Derechos Reservados | </span> 
+                     <span class="nombreDiseñador"><a href="" target="_blank">(nombre diseñador)</a></span>
+                  </p>
+               </div>
+               
+                  <div class="redesSocialesPie">
+                     
+                        <a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <a href="#"><span class="fa fa-rss"></span></a></li>
+                        <a href="#"><span class="fa fa-vk"></span></a>
+
+                       	<a href="#" id="toTop" class="" style="display: block;">
+          					<span id="" style="opacity: 0;"> </span>
+        				</a>
+                     
+                  </div>
+
+               <div class="avisoLegal">
+                  
+                 <a href="#">Aviso Légal</a>
+                 <a href="#">Condiciones de Uso</a>
+                 <a href="#">Política de Cookies</a>
+                 <a href="#">Mápa del Sitio</a>
+                 
+               </div>
+            </div>
+         </footer>
+         <!-- //footer-->  
+
+     
+		     <!-- Modal cookies inicio -->
+
+              <div class="modalCookies" id='modalCookies'>
+              
+              <div class="contenidoCookies">
+                <p>Esta web utiliza cookies propias y de terceros para ofrecerte una mejor
+                experiencia de uso. Aceptas?</p>
+
+                <div class="aceptarCookies">
+                  
+              
+
+                  <button type="button" id='btnAceptarCookies' class="btnAceptarCookies">Aceptar</button>
+                  
+                  <button type='button' id='btnDenegarCookies' class='btnDenegarCookies'>Denegar</button>
+                </div>
+
+              </div>
+            </div>  
+      
+        <!-- // Modal cookies inicio -->
+
+
+
+		<script type="text/javascript" src='./js/carrito.js'></script>
+
+		<script type="text/javascript" src='./js/ofertas.js'></script>
+
+	
+	</body>
+
+</html>
+
+
+
+	
+	
+     
+

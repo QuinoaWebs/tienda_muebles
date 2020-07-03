@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="es" manifest="manifiestoCache.manifest">
+    <head>
+      
+      <!-- La codificación de caracteres, para que se muestren bien los caracteres ajenos al inglés -->
+      <meta charset="UTF-8" />
+      <!-- 
+      Asegura que Explorer funcione a su máxima capacidad y activa el Frame de Chrome
+      http://librosweb.es/css/capitulo_4/margen_relleno_bordes_y_modelo_de_cajas.html
+      -->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <!-- Título entre 60 y 70 caracteres -->
+      <title>Muebles Muebles | Interiorismo y Diseño</title>
+
+      <meta name="keywords" content="Palabras clave para el navegador, relacionadas con la tematica de la web" />
+
+      <!-- Descripción entre 155 y 160 caracteres -->
+      <meta name="description" content="Breve descripción de lo que contendrá el documento HTML" />
+
+      <!-- Para que el contenido se adapte al tamaño de la pantalla del dispositivo -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <!-- Para que en iOS una web parezca app -->
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+
+      <!-- default, black o black-traslucent-->
+      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+      <!--
+      https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html
+      Tablets Retina Display 152x152
+      Smartphones Retina Display 120x120
+      Tablets 76x76
+      Smartphones 57x57
+      Desktop 16x16
+      http://convertico.com/
+      -->
+      <link rel="shortcut icon" type="image/x-icon" href="" />
+      <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+      <link rel="shortcut icon" type="image/svg+xml" href="" />
+      <link rel="apple-touch-icon" size="" href="" />
+
+      <!-- http://humanstxt.org/ -->
+      <link rel="author" type="text/plain" href="humans.txt" />
+      <!-- 
+      http://www.sitemaps.org/
+      http://www.xml-sitemaps.com/
+      -->
+      <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+      <!--
+      http://www.robotstxt.org/
+      http://deteresa.com/meta-robots
+      -->
+      <meta name="robots" content="index,follow" />
+
+      
+      <!-- Meta etiquetas para PWA -->
+    
+      <meta name='MobileOptimized' content="width" />
+      <meta mane='HandheldFriendly' content="true" />
+      <link rel="manifest" href="./manifest.json" />
+
+      <meta name="theme-color" content="#ff5727" />
+
+
+      <!-- // Meta etiquetas para PWA -->
+      
+      
+      
+      
+      <!-- font-awesome icons -->
+      <link href="css/font-awesome.css" rel="stylesheet">
+      <!-- //font-awesome icons -->
+
+      <!-- normalize -->
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <!-- //normalize -->
+
+      <!--//stylesheets-->
+      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <link rel="stylesheet" type="text/css" href="css/salones.css">
+      <!--//stylesheets-->
+
+      <!-- google fonts -->
+      <!-- <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> -->
+      <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
+      <!-- // google fonts -->
+
+
+
+    </head>
+
+	<body>
+
+		<div class="salonesGrid">
+			
+			<header class="header">
+			<div class="fotoGaleria">
+        <div class="fotoGaleriaInfo">
+          <h1>Salones</h1>
+        </div>
+            
+      </div>
+			</header>
+		  
+      <!-- navegador -->
+
+      <section class="navegador">
+            
+        <div class="enlaces">
+          <!-- <a href="#">Home</a> -->
+          <a href="./#sobreNosotros">Nosotros</a>
+          <a href="./#galeria">Galería</a>
+          <a href="./folletos/folleto.pdf" target="__blank">Folletos</a>               
+          <a href="./#contacto">Contacto</a>
+              
+        </div>
+      </section>
+         <!--//navegador -->
+
+		
+
+			<section class="main" id='main'>
+
+
+        <div class="contenedorAcordeon">
+
+          <div class="mainInfo">
+            <h2>Nuestros Salones...</h2>
+          </div>
+				  <fieldset>
+          <div class="acordeon">
+            
+            <div class="moderno">
+              <input type="checkbox" name="moderno" id='moderno'>
+              <label for="moderno">MODERNO</label>
+
+            
+             <div class="modernoEnlaces" id='modernoEnlaces'>
+
+                 <input type='radio' name='enlace' id='mtodo' checked>
+                 <label for='mtodo'>Todo</label>
+
+                 <input type="radio" name="enlace" id='mmesas'>
+                 <label for='mmesas'>Mesas</label>
+
+                 <input type="radio" name="enlace" id='msillas'>
+                 <label for='mmsillas'>Sillas</label>
+
+                 <input type="radio" name="enlace" id='maparadores'>
+                 <label for='maparadores'>Aparadores</label>
+              
+                 <input type="radio" name="enlace" id='mdecoracion'>
+                 <label for='mdecoracion'>Decoración</label>
+
+                    <div class='modernoImagenes' id='modernoImagenes'>
+                      <a href="#imagen1">
+                        <img src="images/g1.jpg" class="mesas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="mmesasInfo">Mesa</h4>
+                      </a>
+
+                
+                      <a href="#imagen2">
+                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="msillasInfo">Sillas</h4>
+                      </a>
+
+               
+               
+
+                      <a href="#imagen3">
+                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="maparadoresInfo">Aparadores</h4>
+                      </a>
+
+                      <a href="#imagen4">
+                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="mdecoracionInfo">Decoración</h4>
+                      </a>
+
+                    </div>
+
+
+              </div>
+
+             
+            </div>
+
+            
+             <div class="modal" id='imagen1'>
+               
+                <h3>IMAGEN 1</h3>
+                <div class="imagen">
+                  <a href="#imagen4">&#60</a>  
+                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href='#imagen2'>></a>                   
+                  
+                </div>
+                 <a class='cerrar' href="">X</a>
+              </div>
+
+              <div class="modal" id='imagen2'>
+               
+                <h3>IMAGEN 2</h3>
+                <div class="imagen">
+                  <a href="#imagen1">&#60</a>
+                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen3">></a>
+                </div>
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+              <div class="modal" id='imagen3'>
+               
+                <h3>IMAGEN 3</h3>
+                <div class="imagen">
+                  <a href="#imagen2">&#60</a>
+                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen4">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+              </div>
+
+              <div class="modal" id='imagen4'>
+               
+                <h3>IMAGEN 4</h3>
+                <div class="imagen">
+                  <a href="#imagen3">&#60</a>
+                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen1">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+
+            <!-- FINAL MODERNO -->
+          
+             
+                       
+              <div class="rustico">
+              <input type="checkbox" name="moderno" id='rustico'>
+              <label for="rustico">RUSTICO</label>
+
+            
+             <div class="rusticoEnlaces" id='rusticoEnlaces'>
+
+                 <input type='radio' name='enlace' id='rtodo' checked>
+                 <label for='rtodo'>Todo</label>
+
+                 <input type="radio" name="enlace" id='rmesas'>
+                 <label for='rmesas'>Mesas</label>
+
+                 <input type="radio" name="enlace" id='rsillas'>
+                 <label for='rsillas'>Sillas</label>
+
+                 <input type="radio" name="enlace" id='raparadores'>
+                 <label for='raparadores'>Aparadores</label>
+              
+                 <input type="radio" name="enlace" id='rdecoracion'>
+                 <label for='rdecoracion'>Decoración</label>
+
+                    <div class='rusticoImagenes' id='rusticoImagenes'>
+                      <a href="#imagen1">
+                        <img src="images/g1.jpg" class="mesas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="rmesasInfo">Mesa</h4>
+                      </a>
+
+                
+                      <a href="#imagen2">
+                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="rsillasInfo">Sillas</h4>
+                      </a>
+
+               
+               
+
+                      <a href="#imagen3">
+                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="raparadoresInfo">Aparadores</h4>
+                      </a>
+
+                      <a href="#imagen4">
+                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="rdecoracionInfo">Decoración</h4>
+                      </a>
+
+                    </div>
+
+
+              </div>
+
+             
+            </div>
+
+            <div class="modal" id='imagen1'>
+               
+                <h3>IMAGEN 1</h3>
+                <div class="imagen">
+                  <a href="#imagen4">&#60</a>  
+                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href='#imagen2'>></a>                   
+                  
+                </div>
+                 <a class='cerrar' href="">X</a>
+              </div>
+
+              <div class="modal" id='imagen2'>
+               
+                <h3>IMAGEN 2</h3>
+                <div class="imagen">
+                  <a href="#imagen1">&#60</a>
+                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen3">></a>
+                </div>
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+              <div class="modal" id='imagen3'>
+               
+                <h3>IMAGEN 3</h3>
+                <div class="imagen">
+                  <a href="#imagen2">&#60</a>
+                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen4">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+              </div>
+
+              <div class="modal" id='imagen4'>
+               
+                <h3>IMAGEN 4</h3>
+                <div class="imagen">
+                  <a href="#imagen3">&#60</a>
+                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen1">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+
+ 
+
+
+            <!-- FINAL DE RUSTICO -->
+
+ 
+            <div class="provenzal">
+              <input type="checkbox" name="provenzal" id='provenzal'>
+              <label for="provenzal">PROVENZAL</label>
+
+            
+             <div class="provenzalEnlaces" id='provenzalEnlaces'>
+
+                 <input type='radio' name='enlace' id='ptodo' checked>
+                 <label for='ptodo'>Todo</label>
+
+                 <input type="radio" name="enlace" id='pmesas'>
+                 <label for='pmesas'>Mesas</label>
+
+                 <input type="radio" name="enlace" id='psillas'>
+                 <label for='psillas'>Sillas</label>
+
+                 <input type="radio" name="enlace" id='paparadores'>
+                 <label for='paparadores'>Aparadores</label>
+              
+                 <input type="radio" name="enlace" id='pdecoracion'>
+                 <label for='pdecoracion'>Decoración</label>
+
+                    <div class='provenzalImagenes' id='provenzalImagenes'>
+                      <a href="#imagen1">
+                        <img src="images/g1.jpg" class="mesas" loading='lazy'>
+                        <h4 class="pmesasInfo">Mesa</h4>
+                      </a>
+
+                
+                      <a href="#imagen2">
+                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="psillasInfo">Sillas</h4>
+                      </a>
+
+               
+               
+
+                      <a href="#imagen3">
+                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="paparadoresInfo">Aparadores</h4>
+                      </a>
+
+                      <a href="#imagen4">
+                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="pdecoracionInfo">Decoración</h4>
+                      </a>
+
+                    </div>
+
+
+              </div>
+
+             
+            </div>
+
+            
+            <div class="modal" id='imagen1'>
+               
+                <h3>IMAGEN 1</h3>
+                <div class="imagen">
+                  <a href="#imagen4">&#60</a>  
+                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href='#imagen2'>></a>                   
+                  
+                </div>
+                 <a class='cerrar' href="">X</a>
+              </div>
+
+              <div class="modal" id='imagen2'>
+               
+                <h3>IMAGEN 2</h3>
+                <div class="imagen">
+                  <a href="#imagen1">&#60</a>
+                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen3">></a>
+                </div>
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+              <div class="modal" id='imagen3'>
+               
+                <h3>IMAGEN 3</h3>
+                <div class="imagen">
+                  <a href="#imagen2">&#60</a>
+                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen4">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+              </div>
+
+              <div class="modal" id='imagen4'>
+               
+                <h3>IMAGEN 4</h3>
+                <div class="imagen">
+                  <a href="#imagen3">&#60</a>
+                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen1">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+
+ 
+ 
+
+
+            <!-- FINAL DE PROVENZAL -->
+
+                        
+            <div class="clasico">
+              <input type="checkbox" name="clasico" id='clasico'>
+              <label for="clasico">CLÁSICO</label>
+
+            
+             <div class="clasicoEnlaces" id='clasicoEnlaces'>
+
+                 <input type='radio' name='enlace' id='ctodo' checked>
+                 <label for='ctodo'>Todo</label>
+
+                 <input type="radio" name="enlace" id='cmesas'>
+                 <label for='cmesas'>Mesas</label>
+
+                 <input type="radio" name="enlace" id='csillas'>
+                 <label for='csillas'>Sillas</label>
+
+                 <input type="radio" name="enlace" id='caparadores'>
+                 <label for='caparadores'>Aparadores</label>
+              
+                 <input type="radio" name="enlace" id='cdecoracion'>
+                 <label for='cdecoracion'>Decoración</label>
+
+                    <div class='clasicoImagenes' id='clasicoImagenes'>
+                      <a href="#imagen1">
+                        <img src="images/g1.jpg" class="mesas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="cmesasInfo">Mesa</h4>
+                      </a>
+
+                
+                      <a href="#imagen2">
+                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="csillasInfo">Sillas</h4>
+                      </a>
+
+               
+               
+
+                      <a href="#imagen3">
+                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="caparadoresInfo">Aparadores</h4>
+                      </a>
+
+                      <a href="#imagen4">
+                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
+                        <h4 class="cdecoracionInfo">Decoración</h4>
+                      </a>
+
+                    </div>
+
+
+              </div>
+
+             
+            </div>
+
+            <div class="modal" id='imagen1'>
+               
+                <h3>IMAGEN 1</h3>
+                <div class="imagen">
+                  <a href="#imagen4">&#60</a>  
+                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href='#imagen2'>></a>                   
+                  
+                </div>
+                 <a class='cerrar' href="">X</a>
+              </div>
+
+              <div class="modal" id='imagen2'>
+               
+                <h3>IMAGEN 2</h3>
+                <div class="imagen">
+                  <a href="#imagen1">&#60</a>
+                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen3">></a>
+                </div>
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+              <div class="modal" id='imagen3'>
+               
+                <h3>IMAGEN 3</h3>
+                <div class="imagen">
+                  <a href="#imagen2">&#60</a>
+                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen4">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+              </div>
+
+              <div class="modal" id='imagen4'>
+               
+                <h3>IMAGEN 4</h3>
+                <div class="imagen">
+                  <a href="#imagen3">&#60</a>
+                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
+                  <a href="#imagen1">></a>
+                </div>
+
+                <a class="cerrar" href="">X</a>
+
+
+             </div>
+
+
+
+           <!-- FINAL DE CLASICO -->
+          </div>
+            </fieldset>
+
+          </div>  
+					
+			   </section>
+		
+
+         <!--footer-->         	
+         <footer class="footer">
+            <div class="piePagina">
+               <div class="derechosReservados">
+                  <p>© 
+                    <span>2020 Muebles (nombre). Derechos Reservados | </span> 
+                     <span class="nombreDiseñador"><a href="" target="_blank">(nombre diseñador)</a></span>
+                  </p>
+               </div>
+               
+                  <div class="redesSocialesPie">
+                     
+                        <a href="#"><span class="fa fa-facebook"></span></a></li>
+                        <a href="#"><span class="fa fa-twitter"></span></a></li>
+                        <a href="#"><span class="fa fa-rss"></span></a></li>
+                        <a href="#"><span class="fa fa-vk"></span></a>
+
+                          <a href="#" id="toTop" class="" style="display: block;">
+                            <span id="" style="opacity: 0;"> </span>
+                          </a>
+                     
+                  </div>
+
+               <div class="avisoLegal">
+                  
+                 <a href="#">Aviso Légal</a>
+                 <a href="#">Condiciones de Uso</a>
+                 <a href="#">Política de Cookies</a>
+                 <a href="#">Mápa del Sitio</a>
+                 
+               </div>
+            </div>
+         </footer>
+         <!-- //footer--> 
+
+                      <!-- Modal cookies inicio -->
+
+              <div class="modalCookies" id='modalCookies'>
+              
+              <div class="contenidoCookies">
+                <p>Esta web utiliza cookies propias y de terceros para ofrecerte una mejor
+                experiencia de uso. Aceptas?</p>
+
+                <div class="aceptarCookies">
+                  
+              
+
+                  <button type="button" id='btnAceptarCookies' class="btnAceptarCookies">Aceptar</button>
+                  
+                  <button type='button' id='btnDenegarCookies' class='btnDenegarCookies'>Denegar</button>
+                </div>
+
+              </div>
+            </div>  
+      
+        <!-- // Modal cookies inicio -->
+ 
+
+     
+		</div>
+
+
+
+
+         <script type="text/javascript" src="./js/salones.js"></script>
+	
+    </body>
+
+</html>    
+
