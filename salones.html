@@ -1,31 +1,32 @@
 <!DOCTYPE html>
-<html lang="es" manifest="manifiestoCache.manifest">
-    <head>
-      
-      <!-- La codificación de caracteres, para que se muestren bien los caracteres ajenos al inglés -->
-      <meta charset="UTF-8" />
-      <!-- 
+<html lang="en">
+
+<head>
+
+    <!-- La codificación de caracteres, para que se muestren bien los caracteres ajenos al inglés -->
+    <meta charset="UTF-8" />
+    <!-- 
       Asegura que Explorer funcione a su máxima capacidad y activa el Frame de Chrome
       http://librosweb.es/css/capitulo_4/margen_relleno_bordes_y_modelo_de_cajas.html
       -->
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <!-- Título entre 60 y 70 caracteres -->
-      <title>Muebles Muebles | Interiorismo y Diseño</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <!-- Título entre 60 y 70 caracteres -->
+    <title>Muebles Muebles | Interiorismo y Diseño</title>
 
-      <meta name="keywords" content="Palabras clave para el navegador, relacionadas con la tematica de la web" />
+    <meta name="keywords" content="Palabras clave para el navegador, relacionadas con la tematica de la web" />
 
-      <!-- Descripción entre 155 y 160 caracteres -->
-      <meta name="description" content="Breve descripción de lo que contendrá el documento HTML" />
+    <!-- Descripción entre 155 y 160 caracteres -->
+    <meta name="description" content="Breve descripción de lo que contendrá el documento HTML" />
 
-      <!-- Para que el contenido se adapte al tamaño de la pantalla del dispositivo -->
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Para que el contenido se adapte al tamaño de la pantalla del dispositivo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-      <!-- Para que en iOS una web parezca app -->
-      <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Para que en iOS una web parezca app -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 
-      <!-- default, black o black-traslucent-->
-      <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-      <!--
+    <!-- default, black o black-traslucent-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <!--
       https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html
       Tablets Retina Display 152x152
       Smartphones Retina Display 120x120
@@ -34,634 +35,307 @@
       Desktop 16x16
       http://convertico.com/
       -->
-      <link rel="shortcut icon" type="image/x-icon" href="" />
-      <link rel="shortcut icon" type="image/png" href="./favicon.png" />
-      <link rel="shortcut icon" type="image/svg+xml" href="" />
-      <link rel="apple-touch-icon" size="" href="" />
+    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <link rel="shortcut icon" type="image/svg+xml" href="" />
+    <link rel="apple-touch-icon" size="" href="" />
 
-      <!-- http://humanstxt.org/ -->
-      <link rel="author" type="text/plain" href="humans.txt" />
-      <!-- 
+    <!-- http://humanstxt.org/ -->
+    <link rel="author" type="text/plain" href="humans.txt" />
+    <!-- 
       http://www.sitemaps.org/
       http://www.xml-sitemaps.com/
       -->
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
-      <!--
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml" />
+    <!--
       http://www.robotstxt.org/
       http://deteresa.com/meta-robots
       -->
-      <meta name="robots" content="index,follow" />
+    <meta name="robots" content="index,follow" />
 
-      
-      <!-- Meta etiquetas para PWA -->
+
+    <!-- Meta etiquetas para PWA -->
+
+    <meta name='MobileOptimized' content="width" />
+    <meta mane='HandheldFriendly' content="true" />
+    <link rel="manifest" href="./manifest.json" />
+
+    <meta name="theme-color" content="#ff5727" />
+
+
+    <!-- // Meta etiquetas para PWA -->
+
+
+
+
+    <!-- font-awesome icons -->
+    <link href="./css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+
+    <!-- normalize -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- //normalize -->
+
+    <!--//stylesheets-->
+    <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+
+    <!--//stylesheets-->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!-- // google fonts -->
+
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="imagen-cabezera-salones">
+
+
+        </div>
+
+        <section class="navegador">
+
+            <!-- <div class="enlaces">
+                <!-- <a href="#">Home</a> 
+            <a href="#sobreNosotros">Nosotros</a>
+            <a href="#galeria">Galería</a>
+            <a href="./folletos/folleto.pdf" target="__blank">Folletos</a>
+            <a href="./ofertas.html">Ofertas</a>
+            <a href="./tienda.html">Tienda Online</a>
+            <a href="./blog.html">Blog</a>
+            <a href="#contacto">Contacto</a>
     
-      <meta name='MobileOptimized' content="width" />
-      <meta mane='HandheldFriendly' content="true" />
-      <link rel="manifest" href="./manifest.json" />
-
-      <meta name="theme-color" content="#ff5727" />
-
-
-      <!-- // Meta etiquetas para PWA -->
-      
-      
-      
-      
-      <!-- font-awesome icons -->
-      <link href="css/font-awesome.css" rel="stylesheet">
-      <!-- //font-awesome icons -->
-
-      <!-- normalize -->
-      <link rel="stylesheet" type="text/css" href="css/normalize.css">
-      <!-- //normalize -->
-
-      <!--//stylesheets-->
-      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-      <link rel="stylesheet" type="text/css" href="css/salones.css">
-      <!--//stylesheets-->
-
-      <!-- google fonts -->
-      <!-- <link href="//fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet"> -->
-      <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet"> -->
-      <!-- // google fonts -->
-
-
-
-    </head>
-
-	<body>
-
-		<div class="salonesGrid">
-			
-			<header class="header">
-			<div class="fotoGaleria">
-        <div class="fotoGaleriaInfo">
-          <h1>Salones</h1>
-        </div>
-            
-      </div>
-			</header>
-		  
-      <!-- navegador -->
-
-      <section class="navegador">
-            
-        <div class="enlaces">
-          <!-- <a href="#">Home</a> -->
-          <a href="./#sobreNosotros">Nosotros</a>
-          <a href="./#galeria">Galería</a>
-          <a href="./folletos/folleto.pdf" target="__blank">Folletos</a>               
-          <a href="./#contacto">Contacto</a>
-              
-        </div>
-      </section>
-         <!--//navegador -->
-
-		
-
-			<section class="main" id='main'>
-
-
-        <div class="contenedorAcordeon">
-
-          <div class="mainInfo">
-            <h2>Nuestros Salones...</h2>
-          </div>
-				  <fieldset>
-          <div class="acordeon">
-            
-            <div class="moderno">
-              <input type="checkbox" name="moderno" id='moderno'>
-              <label for="moderno">MODERNO</label>
-
-            
-             <div class="modernoEnlaces" id='modernoEnlaces'>
-
-                 <input type='radio' name='enlace' id='mtodo' checked>
-                 <label for='mtodo'>Todo</label>
-
-                 <input type="radio" name="enlace" id='mmesas'>
-                 <label for='mmesas'>Mesas</label>
-
-                 <input type="radio" name="enlace" id='msillas'>
-                 <label for='mmsillas'>Sillas</label>
-
-                 <input type="radio" name="enlace" id='maparadores'>
-                 <label for='maparadores'>Aparadores</label>
-              
-                 <input type="radio" name="enlace" id='mdecoracion'>
-                 <label for='mdecoracion'>Decoración</label>
-
-                    <div class='modernoImagenes' id='modernoImagenes'>
-                      <a href="#imagen1">
-                        <img src="images/g1.jpg" class="mesas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="mmesasInfo">Mesa</h4>
-                      </a>
-
-                
-                      <a href="#imagen2">
-                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="msillasInfo">Sillas</h4>
-                      </a>
-
-               
-               
-
-                      <a href="#imagen3">
-                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="maparadoresInfo">Aparadores</h4>
-                      </a>
-
-                      <a href="#imagen4">
-                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="mdecoracionInfo">Decoración</h4>
-                      </a>
-
-                    </div>
-
-
-              </div>
-
-             
+            </div> -->
+    
+            <div class="top-bar">
+                <div class="icon-menu" id="icon-menu">
+                    <div class="icon-menu__bar"> </div>
+                </div>
             </div>
-
-            
-             <div class="modal" id='imagen1'>
-               
-                <h3>IMAGEN 1</h3>
-                <div class="imagen">
-                  <a href="#imagen4">&#60</a>  
-                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href='#imagen2'>></a>                   
-                  
-                </div>
-                 <a class='cerrar' href="">X</a>
-              </div>
-
-              <div class="modal" id='imagen2'>
-               
-                <h3>IMAGEN 2</h3>
-                <div class="imagen">
-                  <a href="#imagen1">&#60</a>
-                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen3">></a>
-                </div>
-                <a class="cerrar" href="">X</a>
-
-
-             </div>
-
-              <div class="modal" id='imagen3'>
-               
-                <h3>IMAGEN 3</h3>
-                <div class="imagen">
-                  <a href="#imagen2">&#60</a>
-                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen4">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
-
-
-              </div>
-
-              <div class="modal" id='imagen4'>
-               
-                <h3>IMAGEN 4</h3>
-                <div class="imagen">
-                  <a href="#imagen3">&#60</a>
-                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen1">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
-
-
-             </div>
-
-
-            <!-- FINAL MODERNO -->
-          
-             
-                       
-              <div class="rustico">
-              <input type="checkbox" name="moderno" id='rustico'>
-              <label for="rustico">RUSTICO</label>
-
-            
-             <div class="rusticoEnlaces" id='rusticoEnlaces'>
-
-                 <input type='radio' name='enlace' id='rtodo' checked>
-                 <label for='rtodo'>Todo</label>
-
-                 <input type="radio" name="enlace" id='rmesas'>
-                 <label for='rmesas'>Mesas</label>
-
-                 <input type="radio" name="enlace" id='rsillas'>
-                 <label for='rsillas'>Sillas</label>
-
-                 <input type="radio" name="enlace" id='raparadores'>
-                 <label for='raparadores'>Aparadores</label>
-              
-                 <input type="radio" name="enlace" id='rdecoracion'>
-                 <label for='rdecoracion'>Decoración</label>
-
-                    <div class='rusticoImagenes' id='rusticoImagenes'>
-                      <a href="#imagen1">
-                        <img src="images/g1.jpg" class="mesas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="rmesasInfo">Mesa</h4>
-                      </a>
-
-                
-                      <a href="#imagen2">
-                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="rsillasInfo">Sillas</h4>
-                      </a>
-
-               
-               
-
-                      <a href="#imagen3">
-                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="raparadoresInfo">Aparadores</h4>
-                      </a>
-
-                      <a href="#imagen4">
-                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="rdecoracionInfo">Decoración</h4>
-                      </a>
-
-                    </div>
-
-
-              </div>
-
-             
-            </div>
-
-            <div class="modal" id='imagen1'>
-               
-                <h3>IMAGEN 1</h3>
-                <div class="imagen">
-                  <a href="#imagen4">&#60</a>  
-                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href='#imagen2'>></a>                   
-                  
-                </div>
-                 <a class='cerrar' href="">X</a>
-              </div>
-
-              <div class="modal" id='imagen2'>
-               
-                <h3>IMAGEN 2</h3>
-                <div class="imagen">
-                  <a href="#imagen1">&#60</a>
-                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen3">></a>
-                </div>
-                <a class="cerrar" href="">X</a>
-
-
-             </div>
-
-              <div class="modal" id='imagen3'>
-               
-                <h3>IMAGEN 3</h3>
-                <div class="imagen">
-                  <a href="#imagen2">&#60</a>
-                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen4">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
-
-
-              </div>
-
-              <div class="modal" id='imagen4'>
-               
-                <h3>IMAGEN 4</h3>
-                <div class="imagen">
-                  <a href="#imagen3">&#60</a>
-                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen1">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
-
-
-             </div>
-
-
- 
-
-
-            <!-- FINAL DE RUSTICO -->
-
- 
-            <div class="provenzal">
-              <input type="checkbox" name="provenzal" id='provenzal'>
-              <label for="provenzal">PROVENZAL</label>
-
-            
-             <div class="provenzalEnlaces" id='provenzalEnlaces'>
-
-                 <input type='radio' name='enlace' id='ptodo' checked>
-                 <label for='ptodo'>Todo</label>
-
-                 <input type="radio" name="enlace" id='pmesas'>
-                 <label for='pmesas'>Mesas</label>
-
-                 <input type="radio" name="enlace" id='psillas'>
-                 <label for='psillas'>Sillas</label>
-
-                 <input type="radio" name="enlace" id='paparadores'>
-                 <label for='paparadores'>Aparadores</label>
-              
-                 <input type="radio" name="enlace" id='pdecoracion'>
-                 <label for='pdecoracion'>Decoración</label>
-
-                    <div class='provenzalImagenes' id='provenzalImagenes'>
-                      <a href="#imagen1">
-                        <img src="images/g1.jpg" class="mesas" loading='lazy'>
-                        <h4 class="pmesasInfo">Mesa</h4>
-                      </a>
-
-                
-                      <a href="#imagen2">
-                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="psillasInfo">Sillas</h4>
-                      </a>
-
-               
-               
-
-                      <a href="#imagen3">
-                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="paparadoresInfo">Aparadores</h4>
-                      </a>
-
-                      <a href="#imagen4">
-                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="pdecoracionInfo">Decoración</h4>
-                      </a>
-
-                    </div>
-
-
-              </div>
-
-             
-            </div>
-
-            
-            <div class="modal" id='imagen1'>
-               
-                <h3>IMAGEN 1</h3>
-                <div class="imagen">
-                  <a href="#imagen4">&#60</a>  
-                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href='#imagen2'>></a>                   
-                  
-                </div>
-                 <a class='cerrar' href="">X</a>
-              </div>
-
-              <div class="modal" id='imagen2'>
-               
-                <h3>IMAGEN 2</h3>
-                <div class="imagen">
-                  <a href="#imagen1">&#60</a>
-                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen3">></a>
-                </div>
-                <a class="cerrar" href="">X</a>
-
-
-             </div>
-
-              <div class="modal" id='imagen3'>
-               
-                <h3>IMAGEN 3</h3>
-                <div class="imagen">
-                  <a href="#imagen2">&#60</a>
-                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen4">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
-
-
-              </div>
-
-              <div class="modal" id='imagen4'>
-               
-                <h3>IMAGEN 4</h3>
-                <div class="imagen">
-                  <a href="#imagen3">&#60</a>
-                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen1">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
-
-
-             </div>
-
-
- 
- 
-
-
-            <!-- FINAL DE PROVENZAL -->
-
+    
+            <nav>
+                <ul class="menu" id="main-menu">
+                    <li class="menu__item"> <a href="./index.html" class="menu__link">
+                        <i class="fa fa-home"></i>
                         
-            <div class="clasico">
-              <input type="checkbox" name="clasico" id='clasico'>
-              <label for="clasico">CLÁSICO</label>
+                    </a> </li>
+                    <li class="menu__item"> <a href="./index.html#sobreNosotros" class="menu__link">Nosotros </a> </li>
+                    <li class="menu__item"> <a href="./index.html#galeria" class="menu__link">Galería </a> </li>
+                    <li class="menu__item"> <a href="./index.html#contacto" class="menu__link">Contacto </a> </li>
+                    <li class="menu__item"> <a href="./tienda.html" class="menu__link">Tienda </a> </li>
+                    <li class="menu__item"><a href="./blog.html" class="menu__link">Blog </a> </li>
+                </ul>
+            </nav>
+    
+    
+    
+    
+        </section>
+    </header>
 
-            
-             <div class="clasicoEnlaces" id='clasicoEnlaces'>
+    
 
-                 <input type='radio' name='enlace' id='ctodo' checked>
-                 <label for='ctodo'>Todo</label>
+    <main class="main" id="main">
 
-                 <input type="radio" name="enlace" id='cmesas'>
-                 <label for='cmesas'>Mesas</label>
+   
+        <div class="acordeon" id="acordeon">
 
-                 <input type="radio" name="enlace" id='csillas'>
-                 <label for='csillas'>Sillas</label>
-
-                 <input type="radio" name="enlace" id='caparadores'>
-                 <label for='caparadores'>Aparadores</label>
-              
-                 <input type="radio" name="enlace" id='cdecoracion'>
-                 <label for='cdecoracion'>Decoración</label>
-
-                    <div class='clasicoImagenes' id='clasicoImagenes'>
-                      <a href="#imagen1">
-                        <img src="images/g1.jpg" class="mesas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="cmesasInfo">Mesa</h4>
-                      </a>
-
-                
-                      <a href="#imagen2">
-                        <img src="images/g2.jpg" class="sillas" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="csillasInfo">Sillas</h4>
-                      </a>
-
-               
-               
-
-                      <a href="#imagen3">
-                        <img src="images/g3.jpg" class="aparadores" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="caparadoresInfo">Aparadores</h4>
-                      </a>
-
-                      <a href="#imagen4">
-                        <img src="images/g4.jpg" class="decoracion" loading='lazy' alt='imagen de muebles'>
-                        <h4 class="cdecoracionInfo">Decoración</h4>
-                      </a>
-
+            <button class="accordion">Moderno</button>
+            <div class="panel" id="panel">
+                <div class="row">
+                    <div class="column">
+                        <picture class="contenedor-imagenes">
+                            <div class="imagenes"><img src="./images/g1.jpg" alt="" class="imagen__salones hover-shadow" data-slide=1></div>
+                            <div class="imagenes"><img src="./images/g2.jpg" alt="" class="imagen__salones hover-shadow" data-slide=2></div>
+                            <div class="imagenes"><img src="./images/g3.jpg" alt="" class="imagen__salones hover-shadow" data-slide=3></div>
+                            <div class="imagenes"><img src="./images/g4.jpg" alt="" class="imagen__salones hover-shadow" data-slide=4></div>
+                            <div class="imagenes"><img src="./images/g5.jpg" alt="" class="imagen__salones hover-shadow" data-slide=5></div>
+                            <div class="imagenes"><img src="./images/g6.jpg" alt="" class="imagen__salones hover-shadow" data-slide=6></div>
+                            <div class="imagenes"><img src="./images/g7.jpg" alt="" class="imagen__salones hover-shadow" data-slide=7></div>
+                            <div class="imagenes"><img src="./images/g8.jpg" alt="" class="imagen__salones hover-shadow" data-slide=8></div>
+                            <div class="imagenes"><img src="./images/g9.jpg" alt="" class="imagen__salones hover-shadow" data-slide=9></div>
+                            <div class="imagenes"><img src="./images/g10.jpg" alt="" class="imagen__salones hover-shadow" data-slide=10></div>
+                            <div class="imagenes"><img src="./images/g11.jpg" alt="" class="imagen__salones hover-shadow" data-slide=11></div>
+                            <div class="imagenes"><img src="./images/g12.jpg" alt="" class="imagen__salones hover-shadow" data-slide=12></div>
+                        </picture>
+    
                     </div>
-
-
-              </div>
-
-             
+    
+                </div>
+    
+    
+            </div>
+    
+            <button class="accordion">Rustico</button>
+            <div class="panel" id="panel">
+                <div class="row">
+                    <div class="column">
+                        <picture class="contenedor-imagenes">
+                            <div class="imagenes"><img src="./images/g1.jpg" alt="" class="imagen__salones hover-shadow" data-slide=1></div>
+                            <div class="imagenes"><img src="./images/g2.jpg" alt="" class="imagen__salones hover-shadow" data-slide=2></div>
+                            <div class="imagenes"><img src="./images/g3.jpg" alt="" class="imagen__salones hover-shadow" data-slide=3></div>
+                            <div class="imagenes"><img src="./images/g4.jpg" alt="" class="imagen__salones hover-shadow" data-slide=4></div>
+                            <div class="imagenes"><img src="./images/g5.jpg" alt="" class="imagen__salones hover-shadow" data-slide=5></div>
+                            <div class="imagenes"><img src="./images/g6.jpg" alt="" class="imagen__salones hover-shadow" data-slide=6></div>
+                            <div class="imagenes"><img src="./images/g7.jpg" alt="" class="imagen__salones hover-shadow" data-slide=7></div>
+                            <div class="imagenes"><img src="./images/g8.jpg" alt="" class="imagen__salones hover-shadow" data-slide=8></div>
+                            <div class="imagenes"><img src="./images/g9.jpg" alt="" class="imagen__salones hover-shadow" data-slide=9></div>
+                            <div class="imagenes"><img src="./images/g10.jpg" alt="" class="imagen__salones hover-shadow" data-slide=10></div>
+                            <div class="imagenes"><img src="./images/g11.jpg" alt="" class="imagen__salones hover-shadow" data-slide=11></div>
+                            <div class="imagenes"><img src="./images/g12.jpg" alt="" class="imagen__salones hover-shadow" data-slide=12></div>
+                        </picture>
+    
+                    </div>
+    
+                </div>
+    
+    
+    
+    
+            </div>
+    
+            <button class="accordion">Provenzal</button>
+            <div class="panel" id="panel">
+                <div class="row">
+                    <div class="column">
+                        <picture class="contenedor-imagenes">
+                            <div class="imagenes"><img src="./images/g1.jpg" alt="imagen1" class="imagen__salones hover-shadow" data-slide=1></div>
+                            <div class="imagenes"><img src="./images/g2.jpg" alt="imagen2" class="imagen__salones hover-shadow" data-slide=2></div>
+                            <div class="imagenes"><img src="./images/g3.jpg" alt="imagen3" class="imagen__salones hover-shadow" data-slide=3></div>
+                            <div class="imagenes"><img src="./images/g4.jpg" alt="imagen4" class="imagen__salones hover-shadow" data-slide=4></div>
+                            <div class="imagenes"><img src="./images/g5.jpg" alt="imagen5" class="imagen__salones hover-shadow" data-slide=5></div>
+                            <div class="imagenes"><img src="./images/g6.jpg" alt="imagen6" class="imagen__salones hover-shadow" data-slide=6></div>
+                            <div class="imagenes"><img src="./images/g7.jpg" alt="imagen7" class="imagen__salones hover-shadow" data-slide=7></div>
+                            <div class="imagenes"><img src="./images/g8.jpg" alt="imagen8" class="imagen__salones hover-shadow" data-slide=8></div>
+                            <div class="imagenes"><img src="./images/g9.jpg" alt="imagen9" class="imagen__salones hover-shadow" data-slide=9></div>
+                            <div class="imagenes"><img src="./images/g10.jpg" alt="imagen10" class="imagen__salones hover-shadow" data-slide=10></div>
+                            <div class="imagenes"><img src="./images/g11.jpg" alt="imagen11" class="imagen__salones hover-shadow" data-slide=11></div>
+                            <div class="imagenes"><img src="./images/g12.jpg" alt="imagen12" class="imagen__salones hover-shadow" data-slide=12></div>
+                        </picture>
+    
+                    </div>
+    
+                </div>
             </div>
 
-            <div class="modal" id='imagen1'>
-               
-                <h3>IMAGEN 1</h3>
-                <div class="imagen">
-                  <a href="#imagen4">&#60</a>  
-                  <img src="images/g1.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href='#imagen2'>></a>                   
-                  
-                </div>
-                 <a class='cerrar' href="">X</a>
-              </div>
 
-              <div class="modal" id='imagen2'>
-               
-                <h3>IMAGEN 2</h3>
-                <div class="imagen">
-                  <a href="#imagen1">&#60</a>
-                  <img src="images/g2.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen3">></a>
-                </div>
-                <a class="cerrar" href="">X</a>
+        </div>
 
 
-             </div>
-
-              <div class="modal" id='imagen3'>
-               
-                <h3>IMAGEN 3</h3>
-                <div class="imagen">
-                  <a href="#imagen2">&#60</a>
-                  <img src="images/g3.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen4">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
+        <!-- aqui va la ventana modal -->
 
 
-              </div>
-
-              <div class="modal" id='imagen4'>
-               
-                <h3>IMAGEN 4</h3>
-                <div class="imagen">
-                  <a href="#imagen3">&#60</a>
-                  <img src="images/g4.jpg" loading='lazy' alt='imagen de muebles'>
-                  <a href="#imagen1">></a>
-                </div>
-
-                <a class="cerrar" href="">X</a>
+        <div class="modal" id="modal">
 
 
-             </div>
-
-
-
-           <!-- FINAL DE CLASICO -->
-          </div>
-            </fieldset>
-
-          </div>  
-					
-			   </section>
-		
-
-         <!--footer-->         	
-         <footer class="footer">
-            <div class="piePagina">
-               <div class="derechosReservados">
-                  <p>© 
-                    <span>2020 Muebles (nombre). Derechos Reservados | </span> 
-                     <span class="nombreDiseñador"><a href="" target="_blank">(nombre diseñador)</a></span>
-                  </p>
-               </div>
-               
-                  <div class="redesSocialesPie">
-                     
-                        <a href="#"><span class="fa fa-facebook"></span></a></li>
-                        <a href="#"><span class="fa fa-twitter"></span></a></li>
-                        <a href="#"><span class="fa fa-rss"></span></a></li>
-                        <a href="#"><span class="fa fa-vk"></span></a>
-
-                          <a href="#" id="toTop" class="" style="display: block;">
-                            <span id="" style="opacity: 0;"> </span>
-                          </a>
-                     
-                  </div>
-
-               <div class="avisoLegal">
-                  
-                 <a href="#">Aviso Légal</a>
-                 <a href="#">Condiciones de Uso</a>
-                 <a href="#">Política de Cookies</a>
-                 <a href="#">Mápa del Sitio</a>
-                 
-               </div>
+            <div class="modal__content" id="modal__content">
+                <img src="" alt="" class="imagen__modal" id="imagen__modal">
             </div>
-         </footer>
-         <!-- //footer--> 
 
-                      <!-- Modal cookies inicio -->
 
-              <div class="modalCookies" id='modalCookies'>
-              
-              <div class="contenidoCookies">
-                <p>Esta web utiliza cookies propias y de terceros para ofrecerte una mejor
-                experiencia de uso. Aceptas?</p>
-
-                <div class="aceptarCookies">
-                  
-              
-
-                  <button type="button" id='btnAceptarCookies' class="btnAceptarCookies">Aceptar</button>
-                  
-                  <button type='button' id='btnDenegarCookies' class='btnDenegarCookies'>Denegar</button>
-                </div>
-
-              </div>
-            </div>  
-      
-        <!-- // Modal cookies inicio -->
- 
-
-     
-		</div>
+        </div>
 
 
 
+    </main>
 
-         <script type="text/javascript" src="./js/salones.js"></script>
-	
-    </body>
 
-</html>    
 
+    <!--footer-->
+    <footer class="footer">
+        <div class="piePagina">
+            <div class="derechosReservados">
+                <p>©
+                    <span>2020 Muebles (nombre). Derechos Reservados | </span>
+                    <span class="nombreDiseñador"><a href="" target="_blank">(nombre diseñador)</a></span>
+                </p>
+            </div>
+
+            <div class="redesSocialesPie">
+
+                <!-- <a href="#"><span class="sinLetra"></span><span class="fa fa-facebook"></span></a></li>
+              <a href="#"><span class="sinLetra"></span><span class="fa fa-twitter"></span></a></li>
+              <a href="#"><span class="sinLetra"></span><span class="fa fa-rss"></span></a></li>
+              <a href="#"><span class="sinLetra"></span><span class="fa fa-vk"></span></a> -->
+
+
+                <a href="#">
+                    <?xml version="1.0" ?><svg width="32" height="32" enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><g><path d="M16,31.625c-8.616,0-15.625-7.01-15.625-15.625C0.375,7.384,7.384,0.375,16,0.375     c8.615,0,15.625,7.009,15.625,15.625C31.625,24.615,24.615,31.625,16,31.625z" fill="#FFFFFF"/><path d="M16,0.75c8.409,0,15.25,6.841,15.25,15.25S24.409,31.25,16,31.25S0.75,24.409,0.75,16S7.591,0.75,16,0.75      M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0L16,0z" fill="#E5E5E5"/></g></g><path d="M13.69,24.903h3.679v-8.904h2.454l0.325-3.068h-2.779l0.004-1.536c0-0.8,0.076-1.229,1.224-1.229h1.534   V7.097h-2.455c-2.949,0-3.986,1.489-3.986,3.992v1.842h-1.838v3.069h1.838V24.903z" fill="#333333"/></g></svg>
+                </a>
+                <a href="#">
+                    <?xml version="1.0" ?><svg width="32" height="32" enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><g><path d="M16,31.625c-8.616,0-15.625-7.01-15.625-15.625S7.384,0.375,16,0.375c8.615,0,15.625,7.01,15.625,15.625     S24.615,31.625,16,31.625z" fill="#FFFFFF"/><path d="M16,0.75c8.409,0,15.25,6.841,15.25,15.25S24.409,31.25,16,31.25S0.75,24.409,0.75,16S7.591,0.75,16,0.75      M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0L16,0z" fill="#E5E5E5"/></g></g><path d="M18.226,8.886c-1.59,0.579-2.595,2.071-2.481,3.704l0.038,0.63l-0.636-0.077   c-2.315-0.296-4.338-1.299-6.056-2.984l-0.84-0.836L8.036,9.94c-0.458,1.376-0.165,2.83,0.789,3.808   c0.509,0.54,0.394,0.617-0.483,0.296c-0.305-0.103-0.573-0.18-0.598-0.141c-0.089,0.09,0.216,1.26,0.458,1.724   c0.331,0.644,1.005,1.273,1.743,1.647l0.624,0.296L9.83,17.581c-0.712,0-0.738,0.013-0.661,0.284   c0.254,0.836,1.259,1.724,2.379,2.11l0.789,0.27l-0.687,0.412c-1.018,0.593-2.214,0.927-3.41,0.951   c-0.573,0.013-1.044,0.064-1.044,0.103c0,0.128,1.553,0.848,2.455,1.132c2.71,0.836,5.929,0.475,8.346-0.952   c1.718-1.016,3.435-3.036,4.237-4.992c0.433-1.041,0.865-2.945,0.865-3.858c0-0.592,0.038-0.669,0.75-1.376   c0.42-0.412,0.814-0.862,0.891-0.99c0.128-0.245,0.114-0.245-0.534-0.026c-1.081,0.386-1.234,0.335-0.699-0.244   c0.394-0.412,0.865-1.158,0.865-1.376c0-0.038-0.191,0.026-0.407,0.141c-0.229,0.129-0.738,0.322-1.12,0.437l-0.687,0.219   L21.535,9.4c-0.344-0.231-0.826-0.489-1.081-0.566C19.804,8.654,18.812,8.68,18.226,8.886z" fill="#333333"/></g></svg>
+                </a>
+                <a href="#">
+                    <?xml version="1.0" ?><svg width="32" height="32" enable-background="new 0 0 32 32" version="1.1" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="Flat_copy"><g><g><path d="M16,31.625c-8.615,0-15.625-7.01-15.625-15.625C0.375,7.384,7.385,0.375,16,0.375S31.625,7.384,31.625,16     C31.625,24.615,24.615,31.625,16,31.625z" fill="#FFFFFF"/><path d="M16,0.75c8.409,0,15.25,6.841,15.25,15.25S24.409,31.25,16,31.25S0.75,24.409,0.75,16S7.591,0.75,16,0.75      M16,0C7.163,0,0,7.163,0,16c0,8.836,7.163,16,16,16s16-7.164,16-16C32,7.163,24.837,0,16,0L16,0z" fill="#E5E5E5"/></g></g><path d="M21.705,22.647h2.942c0-8.434-6.861-15.3-15.294-15.3v2.934C16.163,10.281,21.705,15.829,21.705,22.647z    M11.39,22.652c1.128,0,2.039-0.906,2.039-2.029c0-1.117-0.911-2.033-2.039-2.033c-1.123,0-2.036,0.916-2.036,2.033   C9.353,21.746,10.266,22.652,11.39,22.652z M16.506,22.648L16.506,22.648h2.945c0-5.57-4.531-10.101-10.099-10.101v2.933   c1.91,0,3.705,0.746,5.057,2.1C15.761,18.929,16.506,20.732,16.506,22.648z" fill="#333333"/></g></svg>
+
+                </a>
+
+
+
+
+            </div>
+
+            <div class="avisoLegal">
+
+                <a href="#">Aviso Légal</a>
+                <a href="#">Condiciones de Uso</a>
+                <a href="#">Política de Cookies</a>
+                <a href="#">Mápa del Sitio</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="toTop" class="toTop">
+        <!-- <span id="" style="opacity: 1;"> </span><span class="sinLetra">fa</span> -->
+    </a>
+    <!-- //footer-->
+
+
+      <!-- boton ir arriba -->
+
+      <a href="#" id="toTop" class="toTop">
+        <!-- <span id="" style="opacity: 1;"> </span><span class="sinLetra">fa</span> -->
+    </a>
+
+
+    <!--Modal Cookies con Javascript-->
+
+
+
+
+    <!-- //fin modal cookies javascript -->
+
+    <!-- Modal cookies inicio -->
+
+    <div class="modalCookies" id='modalCookies'>
+
+        <div class="contenidoCookies">
+            <p>Esta web utiliza cookies propias y de terceros para ofrecerte una mejor experiencia de uso. Aceptas?</p>
+
+            <div class="aceptarCookies">
+
+
+
+                <button type="button" id='btnAceptarCookies' class="btnAceptarCookies">Aceptar</button>
+
+                <button type='button' id='btnDenegarCookies' class='btnDenegarCookies'>Denegar</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- // Modal cookies inicio -->
+    <!--js working-->
+
+    <script src="./js/app.js"></script>
+
+</body>
+
+</html>
