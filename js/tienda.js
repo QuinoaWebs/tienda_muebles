@@ -225,8 +225,8 @@
         if (e.target.classList.contains('btn-primary')) {
 
             console.log('enviando')
-            e.preventDefault()
-            window.location.href = "/pagar.html"
+            // e.preventDefault()
+            // window.location.href = "/pagar.html"
 
             
         }
