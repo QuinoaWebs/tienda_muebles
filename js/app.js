@@ -76,7 +76,7 @@
 	* SCRIPT PAGINA SALONES *
 ==================== */
 
-if (window.location.pathname === '/salones.html') {
+if (window.location.pathname === '*/salones.html') {
 
 
     /* Acordeon Salones*/
