@@ -1543,6 +1543,7 @@
         -webkit-transform: scale(1);
         -ms-transform: scale(1);
         transform: scale(1);
+        z-index: 100;
     }
     
     @media screen and (min-width: 600px) {
